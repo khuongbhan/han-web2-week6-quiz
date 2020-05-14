@@ -2,6 +2,146 @@
     Section 3
 ============= */
 #section-3 {
+    display: grid;
+    // grid-template-columns: 10px auto 10px;
     
+    #section-title {
+        margin-top: 44px; 
+        h1 {
+            text-align: center;
+        }
+    }
+    ul {
+        margin-top: 6px;
+        display: grid;
+        grid-template-rows: repeat(3, 436px);
+        grid-gap: 22px;
+        margin: 10px;
+
+        li {
+            // display: block;
+            // margin-left: auto;
+            // margin-right: auto;
+            background-color: $section-2-gray;
+            // margin: 10px;
+        }
+
+        #card-1 {
+            display: grid;
+            grid-template-rows: 200px auto;
+            grid-template-areas: "card-photo" 
+                                  "card-content";
+
+            
+            #photo-1 {
+                grid-area: card-photo;
+                background-image: url('../img/section-3/gallery-1.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 200px;
+            }
+
+
+            >div {
+                grid-area: card-content;
+                margin: 0 20px;
+
+                h1 {
+                    text-align: center;
+                    font-size: rem-calc(24);
+                }
+    
+                h6 {
+                    text-align: justify;
+                    font-size: rem-calc(16);
+                    font-weight: 500;
+                }
+    
+                p {
+                    text-align: left;
+                    font-size: rem-calc(14);
+                }
+            }
+
+        }
+
+        #card-2 {
+            display: grid;
+            grid-template-rows: 200px auto;
+            grid-template-areas: "card-photo" 
+                                  "card-content";
+
+            
+            #photo-2 {
+                grid-area: card-photo;
+                background-image: url('../img/section-3/gallery-2.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 200px;
+            }
+
+
+            >div {
+                grid-area: card-content;
+                margin: 0 20px;
+
+                h1 {
+                    text-align: center;
+                    font-size: rem-calc(24);
+                }
+    
+                h6 {
+                    text-align: justify;
+                    font-size: rem-calc(16);
+                    font-weight: 500;
+                }
+    
+                p {
+                    text-align: left;
+                    font-size: rem-calc(14);
+                }
+            }
+
+        }
+
+        #card-3 {
+            display: grid;
+            grid-template-rows: 200px auto;
+            grid-template-areas: "card-photo" 
+                                  "card-content";
+
+            
+            #photo-3 {
+                grid-area: card-photo;
+                background-image: url('../img/section-3/gallery-3.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 200px;
+            }
+
+
+            >div {
+                grid-area: card-content;
+                margin: 0 20px;
+
+                h1 {
+                    text-align: center;
+                    font-size: rem-calc(24);
+                }
+    
+                h6 {
+                    text-align: justify;
+                    font-size: rem-calc(16);
+                    font-weight: 500;
+                }
+    
+                p {
+                    text-align: left;
+                    font-size: rem-calc(14);
+                }
+            }
+
+        }
+    }
 
 }

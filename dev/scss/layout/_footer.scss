@@ -1,3 +1,30 @@
 /* =============
     Footer
 ============= */
+footer{
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-template-areas: ". footer .";
+    background-color: $footer-black;
+
+
+    >div{
+        grid-area: footer;
+        p {
+            color: $white;
+            text-align: center;
+            span {
+                color: $span-orange;
+            }
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            
+        }
+    }
+}
