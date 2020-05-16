@@ -2,8 +2,13 @@
     Section 2
 ============= */
 #section-2 {
-    // padding-bottom: 32px;
+    
     background-color: $section-2-gray;
+    padding-top: 44px;
+
+    @include md {
+        padding-top: 0;
+    }
 
     @include xl {
         display: grid;
@@ -13,16 +18,17 @@
 
 
     #section-2-container {
-        padding-top: 44px;
+        // padding-top: 44px;
 
         @include md {
             display: grid;
-            grid-template-columns: 40% auto;
+            grid-template-columns: 60% auto;
             grid-template-areas: "section-2-content section-2-image";
-            padding: 50px 0;
+            // padding: 50px 0;
         }
 
         @include lg {
+            grid-template-columns: 50% auto;
             grid-template-areas: "section-2-image section-2-content";
             grid-area: section-2-container;
         }
@@ -39,17 +45,41 @@
             }
 
             #section-2-content {
+                
                 padding: 0 15px;
                 grid-area: section-2-content;
 
                 h1 {
                     text-align: center;
                     font-size: rem-calc(35);
+
+                    @include md {
+                        text-align: left;
+                        margin-left: 44px;
+                    }
+
+                    @include lg {
+                        margin-top: 129px;
+                        margin-left: 135px;
+                        text-align: left;
+                    }
                 }
 
                 p {
                     text-align: justify;
                     font-size: rem-calc(17);
+
+                    @include md {
+                        margin-left: 44px;
+                        // margin-top: 2px;
+                        margin-right: 37px;
+                    }
+
+                    @include lg {
+                        margin-left: 135px;
+                        margin-top: 2px;
+                        margin-right: 130px;
+                    }
                 }
             }
 
