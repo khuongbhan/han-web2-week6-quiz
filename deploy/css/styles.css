@@ -359,19 +359,11 @@ textarea {
     Footer
 ============= */
 footer {
-  display: grid;
-  grid-template-columns: 30% auto 30%;
-  grid-template-areas: ". footer .";
-  background-color: #080808; }
+  background-color: #080808;
+  padding-bottom: 20px; }
   @media (min-width: 768px) {
     footer {
       grid-template-columns: 40% auto 40%; } }
-  @media (min-width: 992px) {
-    footer {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "social-icons . . credits"; } }
   footer > div {
     grid-area: footer; }
     footer > div p {
@@ -381,17 +373,18 @@ footer {
         color: #E1593C; }
       @media (min-width: 992px) {
         footer > div p {
-          grid-area: credits; } }
+          text-align: right;
+          margin-right: 20px; } }
     footer > div ul {
       display: flex;
-      align-items: center;
-      justify-content: space-around;
-      padding-top: 20px;
-      padding-bottom: 10px; }
+      justify-content: center;
+      padding-top: 20px; }
+      footer > div ul #fb, footer > div ul #tw, footer > div ul #yt, footer > div ul #ig {
+        margin: 10px 10px; }
       @media (min-width: 992px) {
         footer > div ul {
-          align-items: center;
-          grid-area: social-icons; } }
+          justify-content: start;
+          margin-left: 20px; } }
 /* =============
     Section 1
 ============= */

@@ -2,21 +2,22 @@
     Footer
 ============= */
 footer{
-    display: grid;
-    grid-template-columns: 30% auto 30%;
-    grid-template-areas: ". footer .";
+    // display: grid;
+    // grid-template-columns: 30% auto 30%;
+    // grid-template-areas: ". footer .";
     background-color: $footer-black;
+    padding-bottom: 20px;
 
     @include md {
         grid-template-columns: 40% auto 40%;
     }
 
-    @include lg {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "social-icons . . credits";
-    }
+    // @include lg {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr 1fr 1fr;
+    //     grid-template-rows: 1fr;
+    //     grid-template-areas: "social-icons . . credits";
+    // }
 
     >div{
         grid-area: footer;
@@ -29,25 +30,33 @@ footer{
 
             @include lg {
                 // display: grid;
-                grid-area: credits;
+                text-align: right;
+                margin-right: 20px;
                 // margin-right: 25px;
             }
         }
 
         ul {
+
             display: flex;
-            align-items: center;
-            justify-content: space-around;
+            // align-items: center;
+            justify-content: center;
             padding-top: 20px;
-            padding-bottom: 10px;
+            // padding-bottom: 10px;
+
+            #fb,#tw,#yt,#ig {
+                margin: 10px 10px;
+            }
 
             @include lg {
                 // display: flex;
                 // justify-content: unset;
-                align-items: center;
-                grid-area: social-icons;
+                // align-items: center;
+                // grid-area: social-icons;
                 // justify-content: flex-start;
                 // margin-left: 25px;
+                justify-content: start;
+                margin-left: 20px;
             }
             
         }
